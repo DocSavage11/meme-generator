@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: none;
+}
+
+.Nav-Bar {
+  background-color: #6e2389;
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+
+  justify-content: space-between;
+
+  margin: auto;
+  margin-top: 0px;
+
+  height: "";
+  width: 100%;
+}
+
+.Logo {
+  display: flex;
+
+  padding: 10px;
+  gap: 20px;
+
+  margin: auto;
+  margin-left: 0px;
+}
+
+#TrollFace {
+  margin: auto;
+  margin-left: 0px;
+
+  height: 50px;
+  width: 55px;
+}
+
+#Brand {
   color: white;
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+#Project-Definition {
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: "";
+  font-weight: "";
+
+  margin: auto;
+  margin-right: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  padding: 36px;
+}
+
+
+
+
+.Form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.Form--Input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.Form-Button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.meme--image {
+  border: 1px solid black;
+  max-width: 100%;
+ 
 }
